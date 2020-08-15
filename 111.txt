@@ -1,0 +1,85 @@
+ const name =  '«Генератор защитного поля»';
+ let price = 1000;
+ const firstMessage = `Выбран ${name}, цена за штуку ${price} кредитов`;
+price = 2000; 
+ const secondMessage = `Выбран ${name}, цена за штуку ${price} кредитов`;
+
+console.log(firstMessage);
+// 'Выбран «Генератор защитного поля», цена за штуку 1000 кредитов'
+
+console.log(secondMessage);
+// 'Выбран «Генератор защитного поля», цена за штуку 2000 кредитов'
+
+
+if (userPassword = 'jqueryismyjam') {
+const userPassword = 'jqueryismyjam';
+
+const ADMIN_PASSWORD = 'jqueryismyjam';
+
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const ACCESS_IS_ALLOWED = 'Добро пожаловать!';
+const ACCESS_DENIED = 'Доступ запрещен, неверный пароль!';
+let message;
+
+// Write code under this line
+ if (userPassword === ADMIN_PASSWORD) {
+  message = ACCESS_IS_ALLOWED;
+} else if(userPassword === null) {
+  message = CANCELED_BY_USER;
+} else {
+  message = ACCESS_DENIED;
+}
+ 
+
+console.log(message);
+
+const countryName = "КитаЙ";
+const CANCELED_BY_USER = 'Отменено пользователем!';
+const NO_DELIVERY = 'В выбранную страну доставка недоступна.';
+const CHINA = 'Китай';
+const AUSTRALIA = 'Австралия';
+const INDIA = 'Индия';
+const JAMAICA = 'Ямайка';
+let message;
+let price = 0;
+let country;
+if (countryName === null) {
+  message = CANCELED_BY_USER;
+} else {
+  country = countryName.charAt(0).toUpperCase() + countryName.slice(1).toLowerCase(); 
+
+  switch (country) {
+  case CHINA:
+    price = 100;
+      break;  // Write code under this line
+   case AUSTRALIA:
+    price = 170;
+      break; 
+    case INDIA:
+    price = 80;
+      break;
+    case JAMAICA:
+       price = 120;
+      break;
+        }
+}
+if (price > 0) { 
+  message = `Доставка в ${country} будет стоить ${price} кредитов`;}
+else {
+  message = NO_DELIVERY;
+}
+//если countryName равно "КитаЙ"
+// то значение message будет равно
+// 'Доставка в Китай будет стоить 100 кредитов'
+
+//если countryName равно null
+// то значение message будет равно
+// 'Отменено пользователем!'
+
+//если countryName равно "Чили"
+// то значение message будет равно
+// 'В выбранную страну доставка недоступна.'
+
+
+
+
